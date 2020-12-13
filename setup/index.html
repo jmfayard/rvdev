@@ -9,7 +9,7 @@
         <meta name="description" content="Life is too short to google for dependencies and versions">
       
       
-        <link rel="canonical" href="https://jmfayard.github.io/rvdev/setup/">
+        <link rel="canonical" href="https://jmfayard.github.io/refreshVersions/setup/">
       
       
         <meta name="author" content="jmfayard LouisCAD">
@@ -79,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -164,7 +164,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -280,8 +280,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#if-you-want-to-use-a-development-version" class="md-nav__link">
-    If you want to use a development version
+  <a href="#if-you-want-to-use-a-snapshot-version" class="md-nav__link">
+    If you want to use a snapshot version
   </a>
   
 </li>
@@ -335,32 +335,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gradle-buildsrcversions/" class="md-nav__link">
-      Gradle buildSrcVersions
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../migration/" class="md-nav__link">
       Migration
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../faq/" class="md-nav__link">
-      FAQ
     </a>
   </li>
 
@@ -382,72 +358,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
+  <li class="md-nav__item">
+    <a href="../CONTRIBUTING/" class="md-nav__link">
       Contributing
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon"></span>
-        Contributing
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/code_of_conduct/" class="md-nav__link">
-      Code of Conduct
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/improving-docs/" class="md-nav__link">
-      Improving docs
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/dev-env/" class="md-nav__link">
-      Dev environment
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/dependency-notations-updates/" class="md-nav__link">
-      Dependency notations
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -518,8 +432,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#if-you-want-to-use-a-development-version" class="md-nav__link">
-    If you want to use a development version
+  <a href="#if-you-want-to-use-a-snapshot-version" class="md-nav__link">
+    If you want to use a snapshot version
   </a>
   
 </li>
@@ -562,7 +476,13 @@ features, and faster builds.</p>
 <p>Run this command to update:</p>
 <div class="highlight"><pre><span></span><code>./gradlew wrapper --gradle-version <span class="m">6</span>.7
 </code></pre></div>
-<p>Note that for Android projects, you need to update the Android Gradle Plugin to its latest stable version at the same time.</p>
+<p>You should also try to update the Gradle plugins present in your build to the latest version. For example on an Android project, do update the version of the Gradle Android Plugin.</p>
+<p>The Gradle documentation has detailed migration guide if you are stuck:</p>
+<ul>
+<li>From Gradle 6+: <a href="https://docs.gradle.org/current/userguide/upgrading_version_6.html">https://docs.gradle.org/current/userguide/upgrading_version_6.html</a></li>
+<li>From Gradle 5.x: <a href="https://docs.gradle.org/current/userguide/upgrading_version_5.html">https://docs.gradle.org/current/userguide/upgrading_version_5.html</a></li>
+<li>From Gradle 4.x: <a href="https://docs.gradle.org/current/userguide/upgrading_version_4.html">https://docs.gradle.org/current/userguide/upgrading_version_4.html</a></li>
+</ul>
 <h2 id="about-gradles-settings-file">About Gradle&rsquo;s Settings file<a class="headerlink" href="#about-gradles-settings-file" title="Permanent link">&para;</a></h2>
 <p>For refreshVersions to be able to work for all the dependencies in your project, including for the ones in the <code>buildscript</code>&lsquo;s <code>classpath</code>, it needs to be setup in the Gradle settings.</p>
 <p>A Gradle project has <a href="https://docs.gradle.org/current/userguide/build_lifecycle.html#sec:settings_file">a Settings file</a> called <code>settings.gradle</code>  or <code>settings.gradle.kts</code> where you must respect a certain order (otherwise, the build breaks).</p>
@@ -571,7 +491,8 @@ features, and faster builds.</p>
 2. The <code>pluginManagement</code> block, if any.
 3. The <code>buildscript</code> block, if any. (We will use it)
 4. The <code>plugins</code> block, if any settings plugins are applied.
-5. Logic for Gradle settings (any other code).</p>
+5. Logic for Gradle settings (any other code).
+6. TK new bloc</p>
 <p>See the example snippet below:</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">com.example.something</span> <span class="c1">// Imports at the top, as usual.</span>
 
@@ -581,7 +502,9 @@ features, and faster builds.</p>
     <span class="c1">// We will setup refreshVersions here, see below.</span>
 <span class="p">}</span>
 
-<span class="n">plugins</span> <span class="p">{}</span> <span class="c1">// Optional</span>
+<span class="n">plugins</span> <span class="p">{</span>
+    <span class="n">id</span><span class="p">(</span><span class="s">&quot;de.fayard.refreshVersions&quot;</span><span class="p">)</span> <span class="n">version</span> <span class="m">0.9</span><span class="p">.</span><span class="m">7</span>
+<span class="p">}</span>
 
 <span class="c1">// Then you can have other code after the blocks above,</span>
 <span class="c1">// we will bootstrap refreshVersions here.</span>
@@ -616,76 +539,30 @@ features, and faster builds.</p>
 <h3 id="if-you-upgrade-from-the-plugin-buildsrcversions">If you upgrade from the plugin buildSrcVersions<a class="headerlink" href="#if-you-upgrade-from-the-plugin-buildsrcversions" title="Permanent link">&para;</a></h3>
 <p>Before refreshVersions, <a href="https://dev.to/jmfayard/better-dependency-management-in-android-studio-3-5-with-gradle-buildsrcversions-34e9">there was the plugin buildSrcVersions</a></p>
 <p>If your project is using it, remove all its configuration from the top <code>build.gradle[.kts]</code> file</p>
-<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">build.gradle.kts</label><div class="tabbed-content"></div>
-</div>
-<div class="highlight"><pre><span></span><code><span class="gd">-plugins {</span>
-<span class="gd">-    id(&quot;de.fayard.buildSrcVersions&quot;) version &quot;0.3.2&quot;</span>
-<span class="gd">-}</span>
-
-<span class="gd">-buildSrcVersions {</span>
-<span class="gd">-    someOption = &quot;somevalue&quot;</span>
-<span class="gd">-}</span>
-</code></pre></div>
 <p>The task <code>buildSrcVersions</code> is still available.</p>
 <p>Read more: <a href="https://jmfayard.github.io/refreshVersions/gradle-buildsrcversions">gradle buildSrcVersions</a>.</p>
 <h3 id="if-you-have-a-buildsrc-module">If you have a buildSrc module<a class="headerlink" href="#if-you-have-a-buildsrc-module" title="Permanent link">&para;</a></h3>
 <p>If you use the <strong>buildSrc</strong> module and have dependencies declared in the <code>buildSrc/build.gradle[.kts]</code> file, you probably want to use refreshVersions there as well. For that, an extra special setup is required.</p>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">buildSrc/settings.gradle.kts</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">buildSrc/settings.gradle.kts</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">de.fayard.refreshVersions.bootstrapRefreshVersionsForBuildSrc</span>
-
-<span class="n">buildscript</span> <span class="p">{</span>
-    <span class="n">repositories</span> <span class="p">{</span> <span class="n">gradlePluginPortal</span><span class="p">()</span> <span class="p">}</span>
-    <span class="n">dependencies</span><span class="p">.</span><span class="n">classpath</span><span class="p">(</span><span class="s">&quot;de.fayard.refreshVersions:refreshVersions:0.9.7&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="n">bootstrapRefreshVersionsForBuildSrc</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">TK</span>
 </code></pre></div>
-<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">buildSrc/settings.gradle</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">buildSrc/settings.gradle</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">de.fayard.refreshVersions.RefreshVersionsSetup</span>
-
-<span class="n">buildscript</span> <span class="o">{</span>
-    <span class="n">repositories</span> <span class="o">{</span> <span class="n">gradlePluginPortal</span><span class="o">()</span> <span class="o">}</span>
-    <span class="n">dependencies</span><span class="o">.</span><span class="na">classpath</span><span class="o">(</span><span class="s2">&quot;de.fayard.refreshVersions:refreshVersions:0.9.7&quot;</span><span class="o">)</span>
-<span class="o">}</span>
-
-<span class="n">RefreshVersionsSetup</span><span class="o">.</span><span class="na">bootstrapForBuildSrc</span><span class="o">(</span><span class="n">settings</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">TK</span>
 </code></pre></div>
 <h3 id="if-you-have-a-compositeincluded-build">If you have a composite/included build<a class="headerlink" href="#if-you-have-a-compositeincluded-build" title="Permanent link">&para;</a></h3>
 <p>Sharing used versions with included builds is not supported at the moment.</p>
 <p>If you need/want this feature, please vote with a 👍 on <a href="https://github.com/jmfayard/refreshVersions/issues/205">this issue</a>, subscribe to it, and tell us about your use case, to help us prioritize.</p>
-<h3 id="if-you-want-to-use-a-development-version">If you want to use a development version<a class="headerlink" href="#if-you-want-to-use-a-development-version" title="Permanent link">&para;</a></h3>
-<p>To use a development version (for example to test an unreleased new feature), you need to find the published development versions by searching in the
-<a href="https://github.com/jmfayard/refreshVersions/commits/develop">recent commits on the develop branch</a> (they start with &ldquo;Dev version&rdquo;).</p>
-<p>You also need to add the maven repository <code>https://dl.bintray.com/jmfayard/maven</code> as shown below:</p>
-<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">settings.gradle.kts</label><div class="tabbed-content"></div>
+<h3 id="if-you-want-to-use-a-snapshot-version">If you want to use a snapshot version<a class="headerlink" href="#if-you-want-to-use-a-snapshot-version" title="Permanent link">&para;</a></h3>
+<p>TK setup for testing with mavenLocal/jitpack/devversion <a href="https://github.com/jmfayard/refreshVersions/issues/290">https://github.com/jmfayard/refreshVersions/issues/290</a></p>
+<div class="tabbed-set" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">settings.gradle.kts</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">de.fayard.refreshVersions.bootstrapRefreshVersions</span>
-
-<span class="n">buildscript</span> <span class="p">{</span>
-    <span class="n">repositories</span> <span class="p">{</span>
-        <span class="n">gradlePluginPortal</span><span class="p">()</span>
-        <span class="n">maven</span><span class="p">(</span><span class="s">&quot;https://dl.bintray.com/jmfayard/maven&quot;</span><span class="p">)</span>
-    <span class="p">}</span>
-    <span class="n">dependencies</span><span class="p">.</span><span class="n">classpath</span><span class="p">(</span><span class="s">&quot;de.fayard.refreshVersions:refreshVersions:0.9.7-dev-001&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-
-<span class="n">bootstrapRefreshVersions</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">TK</span>
 </code></pre></div>
-<div class="tabbed-set" data-tabs="7:1"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">settings.gradle</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">settings.gradle</label><div class="tabbed-content"></div>
 </div>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">de.fayard.refreshVersions.RefreshVersionsSetup</span>
-
-<span class="n">buildscript</span> <span class="o">{</span>
-    <span class="n">repositories</span> <span class="o">{</span>
-        <span class="n">gradlePluginPortal</span><span class="o">()</span>
-        <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://dl.bintray.com/jmfayard/maven&#39;</span> <span class="o">}</span>
-    <span class="o">}</span>
-    <span class="n">dependencies</span><span class="o">.</span><span class="na">classpath</span><span class="o">(</span><span class="s2">&quot;de.fayard.refreshVersions:refreshVersions:0.9.7-dev-001&quot;</span><span class="o">)</span>
-<span class="o">}</span>
-
-<span class="n">RefreshVersionsSetup</span><span class="o">.</span><span class="na">bootstrap</span><span class="o">(</span><span class="n">settings</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">TK</span>
 </code></pre></div>
 <h2 id="next-steps">Next steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
 <p>You did it! refreshVersions is now properly setup.</p>

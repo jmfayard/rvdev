@@ -9,7 +9,7 @@
         <meta name="description" content="Life is too short to google for dependencies and versions">
       
       
-        <link rel="canonical" href="https://jmfayard.github.io/rvdev/add-dependencies/">
+        <link rel="canonical" href="https://jmfayard.github.io/refreshVersions/add-dependencies/">
       
       
         <meta name="author" content="jmfayard LouisCAD">
@@ -79,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-header-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -164,7 +164,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://jmfayard.github.io/rvdev/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
+    <a href="https://jmfayard.github.io/refreshVersions/" title="gradle refreshVersions" class="md-nav__button md-logo" aria-label="gradle refreshVersions">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -276,11 +276,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#non-built-in-dependency-notations" class="md-nav__link">
-    Non-built-in dependency notations
+  <a href="#other-way-to-add-dependencies" class="md-nav__link">
+    Other way to add dependencies
   </a>
   
-    <nav class="md-nav" aria-label="Non-built-in dependency notations">
+    <nav class="md-nav" aria-label="Other way to add dependencies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -334,32 +334,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gradle-buildsrcversions/" class="md-nav__link">
-      Gradle buildSrcVersions
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../migration/" class="md-nav__link">
       Migration
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../faq/" class="md-nav__link">
-      FAQ
     </a>
   </li>
 
@@ -381,72 +357,10 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
+  <li class="md-nav__item">
+    <a href="../CONTRIBUTING/" class="md-nav__link">
       Contributing
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Contributing" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon"></span>
-        Contributing
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/code_of_conduct/" class="md-nav__link">
-      Code of Conduct
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/improving-docs/" class="md-nav__link">
-      Improving docs
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/dev-env/" class="md-nav__link">
-      Dev environment
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/dependency-notations-updates/" class="md-nav__link">
-      Dependency notations
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
     
@@ -501,11 +415,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#non-built-in-dependency-notations" class="md-nav__link">
-    Non-built-in dependency notations
+  <a href="#other-way-to-add-dependencies" class="md-nav__link">
+    Other way to add dependencies
   </a>
   
-    <nav class="md-nav" aria-label="Non-built-in dependency notations">
+    <nav class="md-nav" aria-label="Other way to add dependencies">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -603,7 +517,9 @@ the <code>versions.properties</code> file:</p>
 <span class="o">}</span>
 </code></pre></div>
 <p>As you see, the convention is pretty simple. The key is the id of the plugin, prefixed by <code>plugin.</code>: <code>plugin.some.plugin.id</code> sets the version of the plugin of id <code>some.plugin.id</code>.</p>
-<h2 id="non-built-in-dependency-notations">Non-built-in dependency notations<a class="headerlink" href="#non-built-in-dependency-notations" title="Permanent link">&para;</a></h2>
+<h2 id="other-way-to-add-dependencies">Other way to add dependencies<a class="headerlink" href="#other-way-to-add-dependencies" title="Permanent link">&para;</a></h2>
+<p>The built-in dependencies are there for convenience, but the plugin <code>refreshVersions</code> doesn&rsquo;t really care how you add dependencies to the build</p>
+<p>As long as you use placeholder version <code>_</code>, your library is managed by gradle refreshVersions!</p>
 <h3 id="use-gradle-buildsrcversions-wip">Use gradle buildSrcVersions (WIP)<a class="headerlink" href="#use-gradle-buildsrcversions-wip" title="Permanent link">&para;</a></h3>
 <p>Yet another approach to managing dependencies is to use the <strong>Gradle buildSrc</strong> module, and to automatically generate a file <code>Libs.kt</code> that contains all the dependencies applied to your build:</p>
 <div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">buildSrc/src/main/kotlin/Libs.kt</label><div class="tabbed-content"></div>
@@ -619,8 +535,8 @@ the <code>versions.properties</code> file:</p>
 
 <span class="p">}</span>
 </code></pre></div>
-<p>Because this file used the placeholder version <code>_</code>, it is compatible with gradle refreshVersions!</p>
-<p><strong>This feature is not done yet. If you think we should prioritze it, please vote for <a href="https://github.com/jmfayard/refreshVersions/issues/235">this issue</a> with a 👍 and subscribe to it.</strong></p>
+<p>Now here is a good news: you don&rsquo;t need to write this file manually, it can be automatically generated!</p>
+<p>This is done with <a href="/gradle-buildsrcversions">==&gt; <strong>gradle buildSrcLibs</strong> &lt;==</a></p>
 <h3 id="use-package-search-from-jetbrains">Use Package Search from JetBrains<a class="headerlink" href="#use-package-search-from-jetbrains" title="Permanent link">&para;</a></h3>
 <p>JetBrains offers the plugin <a href="https://plugins.jetbrains.com/plugin/12507-package-search"><strong>Package Search</strong></a>.</p>
 <p>Package Search provides a nice UX to add a dependency:</p>

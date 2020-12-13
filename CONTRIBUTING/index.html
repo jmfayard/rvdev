@@ -325,15 +325,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#publishtomavenlocal-publishes-the-plugin-locally" class="md-nav__link">
-    publishToMavenLocal publishes the plugin locally
+  <a href="#we-use-feature-flags-to-avoid-breaking-other-peoples-build" class="md-nav__link">
+    We use feature flags to avoid breaking other people's build
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checksamplessh-test-that-the-samples-are-working" class="md-nav__link">
-    checkSamples.sh test that the samples are working
+  <a href="#we-publish-the-plugin-locally-with-the-task-publishtomavenlocal" class="md-nav__link">
+    We publish the plugin locally with the task :publishToMavenLocal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-test-that-the-samples-are-still-working-with-checksamplessh" class="md-nav__link">
+    We test that the samples are still working with checkSamples.sh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-are-mindful-with-the-plugin-dependencies" class="md-nav__link">
+    We are mindful with the plugin dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-write-tests" class="md-nav__link">
+    We write tests
   </a>
   
 </li>
@@ -341,6 +362,13 @@
         <li class="md-nav__item">
   <a href="#how-we-test-the-plugin-in-other-projects" class="md-nav__link">
     How we test the plugin in other projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-publish-a-non-stable-version-of-refreshversions" class="md-nav__link">
+    How we publish a non-stable version of refreshVersions
   </a>
   
 </li>
@@ -432,15 +460,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#publishtomavenlocal-publishes-the-plugin-locally" class="md-nav__link">
-    publishToMavenLocal publishes the plugin locally
+  <a href="#we-use-feature-flags-to-avoid-breaking-other-peoples-build" class="md-nav__link">
+    We use feature flags to avoid breaking other people's build
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checksamplessh-test-that-the-samples-are-working" class="md-nav__link">
-    checkSamples.sh test that the samples are working
+  <a href="#we-publish-the-plugin-locally-with-the-task-publishtomavenlocal" class="md-nav__link">
+    We publish the plugin locally with the task :publishToMavenLocal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-test-that-the-samples-are-still-working-with-checksamplessh" class="md-nav__link">
+    We test that the samples are still working with checkSamples.sh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-are-mindful-with-the-plugin-dependencies" class="md-nav__link">
+    We are mindful with the plugin dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#we-write-tests" class="md-nav__link">
+    We write tests
   </a>
   
 </li>
@@ -448,6 +497,13 @@
         <li class="md-nav__item">
   <a href="#how-we-test-the-plugin-in-other-projects" class="md-nav__link">
     How we test the plugin in other projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-we-publish-a-non-stable-version-of-refreshversions" class="md-nav__link">
+    How we publish a non-stable version of refreshVersions
   </a>
   
 </li>
@@ -528,21 +584,31 @@
 <li>Select &ldquo;Import Gradle Project&rdquo;.</li>
 </ol>
 <p>TK: the fix-ide.sh script</p>
-<h2 id="publishtomavenlocal-publishes-the-plugin-locally"><code>publishToMavenLocal</code> publishes the plugin locally<a class="headerlink" href="#publishtomavenlocal-publishes-the-plugin-locally" title="Permanent link">&para;</a></h2>
+<h2 id="we-use-feature-flags-to-avoid-breaking-other-peoples-build">We use feature flags to avoid breaking other people&rsquo;s build<a class="headerlink" href="#we-use-feature-flags-to-avoid-breaking-other-peoples-build" title="Permanent link">&para;</a></h2>
+<p>TK</p>
+<h2 id="we-publish-the-plugin-locally-with-the-task-publishtomavenlocal">We publish the plugin locally with the task <code>:publishToMavenLocal</code><a class="headerlink" href="#we-publish-the-plugin-locally-with-the-task-publishtomavenlocal" title="Permanent link">&para;</a></h2>
 <p>This step is required for the samples to work afterwards and enable you to test your changes.</p>
 <ol>
 <li>Checks that the <code>plugins/version.txt</code> file contains a version ending with <code>-LOCAL-SNAPSHOT</code> to avoid overlapping a published version.</li>
 <li>In the &ldquo;Gradle&rdquo; tool window, or from the terminal, run the <code>publishToMavenLocal</code> task.</li>
 </ol>
-<h2 id="checksamplessh-test-that-the-samples-are-working"><code>checkSamples.sh</code> test that the samples are working<a class="headerlink" href="#checksamplessh-test-that-the-samples-are-working" title="Permanent link">&para;</a></h2>
+<h2 id="we-test-that-the-samples-are-still-working-with-checksamplessh">We test that the samples are still working with <code>checkSamples.sh</code><a class="headerlink" href="#we-test-that-the-samples-are-still-working-with-checksamplessh" title="Permanent link">&para;</a></h2>
+<p>TK</p>
+<h2 id="we-are-mindful-with-the-plugin-dependencies">We are mindful with the plugin dependencies<a class="headerlink" href="#we-are-mindful-with-the-plugin-dependencies" title="Permanent link">&para;</a></h2>
+<p>TK</p>
+<h2 id="we-write-tests">We write tests<a class="headerlink" href="#we-write-tests" title="Permanent link">&para;</a></h2>
 <p>TK</p>
 <h2 id="how-we-test-the-plugin-in-other-projects">How we test the plugin in other projects<a class="headerlink" href="#how-we-test-the-plugin-in-other-projects" title="Permanent link">&para;</a></h2>
 <p>The samples are useful to test quickly how the plugin behaves, but sometimes it&rsquo;s best to test it into a real project.</p>
 <p>TK</p>
+<h2 id="how-we-publish-a-non-stable-version-of-refreshversions">How we publish a non-stable version of refreshVersions<a class="headerlink" href="#how-we-publish-a-non-stable-version-of-refreshversions" title="Permanent link">&para;</a></h2>
+<p>TK jitpack</p>
+<p>TK dev version</p>
 <h2 id="how-we-contribute-new-dependency-notations">How we contribute new dependency notations<a class="headerlink" href="#how-we-contribute-new-dependency-notations" title="Permanent link">&para;</a></h2>
 <p>TK we don&rsquo;t at the moment</p>
 <h2 id="how-we-update-the-documentation">How we update the documentation<a class="headerlink" href="#how-we-update-the-documentation" title="Permanent link">&para;</a></h2>
-<p>TK</p>
+<p>TK mkdocs serve etc..</p>
+<p>TK <a href="https://jmfayard.github.io/rvdev/">https://jmfayard.github.io/rvdev/</a></p>
 <h2 id="how-to-develop-a-gradle-plugin">How to develop a Gradle plugin<a class="headerlink" href="#how-to-develop-a-gradle-plugin" title="Permanent link">&para;</a></h2>
 <p>If you have never worked on a Gradle plugin before, have a glimpse at the following guides</p>
 <ul>
@@ -551,7 +617,10 @@
 <li><a href="https://guides.gradle.org/testing-gradle-plugins/">Testing Gradle plugins</a></li>
 </ul>
 <h2 id="our-checklist-before-merging-a-pull-request">Our checklist before merging a pull-request<a class="headerlink" href="#our-checklist-before-merging-a-pull-request" title="Permanent link">&para;</a></h2>
-<p>TK</p>
+<p>TK make a WIP pull request for early feedback, or ask for a detailed review if you are almost done</p>
+<p>TK merge main</p>
+<p>TK delete branch</p>
+<p>TK ask for a new review</p>
                 
               
               
